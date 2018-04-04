@@ -2,8 +2,8 @@
 
 # Variables:
 compiler=clang++
-FLAGS="-pedantic -Wall -Wextra -Wnoexcept -Wredundant-decls -Wundef -Werror -Wfatal-errors"
-INPUTS="main.cpp functions/functions.cpp functions/bigint.cpp"
+FLAGS="-pedantic -Wall -Wextra -Wredundant-decls -Wundef -Werror -Wfatal-errors"
+INPUTS="main.cpp functions.cpp bigint/bigint.cpp"
 output=frequencies
 
 # Halt on first error

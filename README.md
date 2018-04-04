@@ -50,12 +50,12 @@ In class, we discussed an algorithm for representing any trigram of ASCII charac
 
 Your program will receive a single command line argument that is the name of a text file. Your program should start by reading this text file. It will then calculate what the trigrams are and will store the frequency of eacy trigram in some way. How you go about storing these frequencies is entirely up to you. You could use C-arrays, or the C++ **std::vector** class, or your own class, or anything else that makes sense.
 
-You must name your output file **frequencies.o**.
+You must name your output file **frequencies**.
 
 **Sample command-line input:**
 
 ```bash
-$ ./frequencies.o german
+$ ./frequencies german
 ```
 
 Your program should print out the integer values of the frequencies in the order discussed in the section above. The integer values need to be **space-separated** and there needs to be a **new-line character** after the frequency of the very last trigram.
@@ -120,18 +120,18 @@ Note that you will be performing multiplications and divisions with some really 
 
 Your program will receive an unknown (greater than 2) number of command-line arguments. These will be the names of the training files and finally the name of the test file. You are to calculate the **trigram frequency vector** for each of the files given. You will then compute the **cosine similarity** between the frequency vector of the test file and the frequency vector of each training file. You will find the highest value for similarity and then print the name of the language that was the best match (followed by a new-line character).
 
-You must name your output file **language.o**.
+You must name your output file **language**.
 
 **Sample command-line input:**
 
 ```bash
-$ ./language.o english german spanish icelandic maori test
+$ ./language english german spanish icelandic maori test
 ```
 
 If `icelandic` happened to be the best match for `test`, your command-line should end up looking like:
 
 ```bash
-$ ./language.o english german spanish icelandic maori test
+$ ./language english german spanish icelandic maori test
 icelandic
 $
 ```
@@ -160,7 +160,7 @@ You will notice that inside the resulting directory are two sub-directories call
 If you are anything like some of your instructors, you hate typing repetitive and unnecessary things on the command line. You should learn to rely on *wildcards*, also known as *file globbing*. For example, if you ran:
 
 ```bash
-$ ./language.o training_languages/* testing_languages/english
+$ ./language training_languages/* testing_languages/english
 ```
 
 the command line will expand the * into *all the files in the **training_languages** sub-directory*, so your program will see every file individually just as if you had painstakingly typed out the name of every file individually!
@@ -174,13 +174,13 @@ Note that ease-of-debugging and speed-of-execution are at odds with one another.
 You can put a stopwatch to your program with the `time` command:
 
 ```bash
-$ time ./language.o training_languages/* testing_languages/english
+$ time ./language training_languages/* testing_languages/english
 ```
 
 On my (rather fast) laptop, I can say something like this:
 
 ```bash
-$ time ./language.o training_languages/* testing_languages/english
+$ time ./language training_languages/* testing_languages/english
 training_languages/english
 
 real    0m2.610s

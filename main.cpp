@@ -2,8 +2,11 @@
  * Started by Najib 3/21/18
  **/
 
-#include "functions/functions.h"
-#include "functions/bigint.h"
+///////////////////////////////////////////////////////////////////
+// INCLUDES GO HERE
+///////////////////////////////////////////////////////////////////
+#include "functions.h"
+#include "bigint/bigint.h"
 
 
 int main(int argc, char *argv[]) {
