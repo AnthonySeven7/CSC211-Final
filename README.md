@@ -18,6 +18,10 @@ The idea behind **trigram frequency analysis** is that you measure the **frequen
 
 You will calculate a frequency vector for each of your training languages. You will then compute the frequency vector for the test language. You will then calculate the **similarity** between the test frequency vector and each of the training frequency vectors. The training frequency vector that yields the highest similarity will correspond to the best matching language.
 
+## Policies and Grading Rubric
+
+**This is a pair assignment.** You are expected to work with a partner, in person, on all aspects of the assignment, in accordance with the pair programming policies laid out in the syllabus. **This means you work together; you may not divide the project in half and work on each part separately!** With permission of the instructor, you may do the project solo; such permission is likely to be granted if your commute or work schedule prevents you from meeting with a partner. You may discuss **ideas** (e.g. data structures and algorithms) with other students, but **It is a grievous violation of academic integrity for one pair of students to share code with another pair of students.**
+
 ## Project Structure and Deadlines
 
 This project will be split into two milestones.
