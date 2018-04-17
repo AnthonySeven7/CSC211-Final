@@ -1,5 +1,5 @@
 # Natural Language Detection
-
+Test
 Welcome to the final project for CSC211. **Read this document thoroughly before starting on your project.**
 
 Your task is to implement a machine learning algorithm that detects what language a given text file is written in. You will do this by employing a method called **n-gram frequency analysis**. We will restrict our analysis to languages that use the english alphabet.
