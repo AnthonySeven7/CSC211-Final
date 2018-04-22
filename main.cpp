@@ -10,9 +10,13 @@
 
 
 int main(int argc, char *argv[]) {
-    ///////////////////////////////////////////////////////////////////
-    // MAKE YOUR OWN MAIN.
-    ///////////////////////////////////////////////////////////////////
+  std::ifstream infile(filename);
+  char ch;
+  if (!infile.fail()){
+    while (infile.get(ch)){
+
+    }
+    infile.close();
 
     (void) argc;
     (void) argv;
