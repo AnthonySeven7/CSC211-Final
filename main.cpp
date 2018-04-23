@@ -10,17 +10,16 @@
 
 
 int main(int argc, char *argv[]) {
-  std::string filename = "testing_languages/" + argv[1];
-  std::ifstream infile(filename);
-  char ch;
-  if (!infile.fail()){
-    while (infile.get(ch)){
-
-    }
-    infile.close();
-
-    (void) argc;
-    (void) argv;
-
+  if (argc == 0){
     return 0;
+  } else {
+    std::string filename = "testing_languages/" + argv[1];
+    std::ifstream infile(filename);
+    char ch;
+    if (!infile.fail()){
+      while (infile.get(ch)){
+
+      }
+      infile.close();
+  }
 }
